@@ -42,7 +42,7 @@ Entre as possibilidades de Back-End estão:
 ### 🔐 Login
 
 <p align="center">
-  <img src="docs/images/login.png" width="250">
+  <img src="docs/img/login.png" width="250">
 </p>
 
 Tela de autenticação do aplicativo.
@@ -52,7 +52,7 @@ Tela de autenticação do aplicativo.
 ### 🏦 Banco
 
 <p align="center">
-  <img src="docs/images/bank.png" width="250">
+  <img src="docs/img/bank.png" width="250">
 </p>
 
 Tela principal do banco, apresentando as contas cadastradas, conta
@@ -63,7 +63,7 @@ selecionada e saldo.
 ### 💳 Conta
 
 <p align="center">
-  <img src="docs/images/account.png" width="250">
+  <img src="docs/img/account.png" width="250">
 </p>
 
 Tela de detalhes da conta, apresentando informações do banco, tipo da conta,
@@ -74,33 +74,16 @@ número, saldo e serviços disponíveis.
 ### 📈 Aplicações
 
 <p align="center">
-  <img src="docs/images/applications.png" width="250">
+  <img src="docs/img/applications.png" width="250">
 </p>
 
 Tela de aplicações financeiras vinculadas à conta selecionada.
 
 ---
 
-### 👁️ Valores visíveis
 
-<p align="center">
-  <img src="docs/images/values-visible.png" width="250">
-</p>
 
-Os valores financeiros podem ser visualizados normalmente.
 
----
-
-### 🔒 Valores ocultos
-
-<p align="center">
-  <img src="docs/images/values-hidden.png" width="250">
-</p>
-
-O usuário pode ocultar os valores financeiros através do controle de
-visibilidade.
-
----
 
 ## 🖼️ Galeria
 
@@ -109,13 +92,6 @@ visibilidade.
   <img src="docs/images/bank.png" width="180">
   <img src="docs/images/account.png" width="180">
   <img src="docs/images/applications.png" width="180">
-</p>
-
-<p align="center">
-  <img src="docs/images/values-visible.png" width="180">
-  <img src="docs/images/values-hidden.png" width="180">
-  <img src="docs/images/transactions.png" width="180">
-  <img src="docs/images/credit-card.png" width="180">
 </p>
 
 ---
