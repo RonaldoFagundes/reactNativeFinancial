@@ -64,8 +64,6 @@ export default function AccountModal({
       accountTypes = ["Corrente", "Poupança"];
     }
 
-
-
     const handleInputChange = (field, value) => {
         setAccount({
             ...account,
@@ -73,13 +71,8 @@ export default function AccountModal({
         });
     };
 
-
-
-
     const save = () => {
-
         onSave(account);
-
         setAccount({
             type_act: "",
             number_act: "",
@@ -87,9 +80,6 @@ export default function AccountModal({
             saldo_act: ""
         });
     };
-
-
-
     
 
     return (
@@ -104,9 +94,7 @@ export default function AccountModal({
                 style={{ flex: 1 }}
             >
 
-
                 <ScrollView contentContainerStyle={styles.container}>
-
 
                     <View style={styles.header}>
 
@@ -119,7 +107,6 @@ export default function AccountModal({
                         </Text>
 
                     </View>
-
 
                    
                     <View style={styles.formGroup}>
@@ -146,7 +133,6 @@ export default function AccountModal({
                             ))}
                         </View>
                     </View>
-
 
                     
                     <View style={styles.formGroup}>

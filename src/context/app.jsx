@@ -24,6 +24,8 @@ export default function AppProvider({ children }) {
     const [selectedBank, setSelectedBank] = useState(null);
     const [selectedAccount, setSelectedAccount] = useState(null);
 
+    const [showValues, setShowValues] = useState(true);
+
 
 
     useEffect(() => {
@@ -98,7 +100,11 @@ export default function AppProvider({ children }) {
 
                 // ACCOUNT
                 selectedAccount,
-                setSelectedAccount
+                setSelectedAccount,
+
+                // VALUES
+                showValues,
+                setShowValues
 
             }}
         >

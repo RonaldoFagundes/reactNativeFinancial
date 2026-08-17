@@ -53,7 +53,6 @@ export default function BankSummary({ bank, totalAccounts, onAddAccount }) {
             </View>
 
 
-
             <View style={styles.defaulCard}>
                 <Pressable
                     style={[styles.typeButton]}
@@ -62,7 +61,6 @@ export default function BankSummary({ bank, totalAccounts, onAddAccount }) {
                     <Text style={styles.textBtn}>New Account</Text>
                 </Pressable>
             </View>
-
 
         </View>
     );

@@ -48,12 +48,34 @@ export default StyleSheet.create({
         marginTop: 4
     },
 
-    balance: {
+
+    
+    balanceContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+},
+
+
+balance: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: "#FFFFFF",
+       marginRight: 8,
+},
+
+
+   /*  
+   balance: {
         color: "#FFF",
         fontSize: 22,
         fontWeight: "700",
         marginTop: 10
     },
+ */
+
+
 
      sectionTitle: {
         color: "#94A3B8",
@@ -61,7 +83,10 @@ export default StyleSheet.create({
         marginTop: 10,
         fontSize: 13,
         fontWeight: "600"
-    }
+    },
+
+
+
 
    /*
     container: {

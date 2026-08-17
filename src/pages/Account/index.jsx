@@ -4,15 +4,21 @@ import styles from "./styles";
 import { AppContext } from "../../context/app";
 import { getBankImage } from "../../utils/img";
 import MenuCard from "../../components/MenuCard";
+import ValuesToggle from "../../components/ValuesToggle";
 
 export default function Account({ navigation }) {
 
     const{ 
         selectedBank,
-        selectedAccount: account
+        selectedAccount: account,
+        showValues,
+        setShowValues
      }= useContext(AppContext);
      
     const img = getBankImage(selectedBank?.img_bnk);
+
+    // const [showValues, setShowValues] = useState(true);
+
 
     /*
     const isCurrent = account.type_act === "Corrente";
@@ -26,6 +32,24 @@ export default function Account({ navigation }) {
     const isDigital = type === "Digital";
     const isSavings = type === "Poupança";
     const isInvestments = type === "Investimento";
+
+
+    function toggleValues() {
+        setShowValues(prev => !prev);
+    }
+
+
+   if (!account) {
+        return (
+            <View style={styles.container}>
+                <Text style={styles.sectionTitle}>
+                    Nenhuma conta selecionada.
+                </Text>
+            </View>
+        );
+    }
+
+
 
     /*
     const [brokers, setBrokers] = useState([]);
@@ -47,16 +71,25 @@ export default function Account({ navigation }) {
 
      return (
 
-        <ScrollView style={styles.container}>
-
-
+        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+        
 
             {/* HEADER CARD */}
             <View style={styles.card}>
-
+{/* 
                 <View style={styles.imageBox}>
                     <Image source={img} style={styles.logo} />
                 </View>
+ */}
+                  <View style={styles.imageBox}>
+                    {img && (
+                        <Image
+                            source={img}
+                            style={styles.logo}
+                        />
+                    )}
+                </View>
+
 
                 <Text style={styles.bankName}>
                     {selectedBank?.name_bnk}
@@ -70,18 +103,42 @@ export default function Account({ navigation }) {
                      Conta: {account?.number_act}
                 </Text>
 
+               
+
+
+{/* 
                 <Text style={styles.balance}>
                     R$ {Number(account?.saldo_act || 0).toFixed(2)}
                 </Text>
+ */}
+
+                  <View style={styles.balanceContainer}>
+
+                    <Text style={styles.balance}>
+                        {showValues
+                            ? `R$ ${Number(
+                                account.saldo_act || 0
+                            ).toFixed(2)}`
+                            : "R$ ••••••"
+                        }
+                    </Text>
+
+
+                    <ValuesToggle
+                        visible={!showValues}
+                        onToggle={toggleValues}
+                    />
+
+                </View>
+
+
 
             </View>
 
             {/* MENU */}
             <Text style={styles.sectionTitle}>
                 Serviços
-            </Text>           
-
-
+            </Text>         
 
            {!isInvestments && (
              <MenuCard
@@ -91,7 +148,6 @@ export default function Account({ navigation }) {
            />
            )}
 
-
              {(isCurrent || isDigital) && (
             <MenuCard
               icon="card"
@@ -99,10 +155,6 @@ export default function Account({ navigation }) {
               onPress={() => navigation.navigate("CreditCard")}
             />
            )}
-
-
-
-
 
             {(isInvestments || isCurrent) && (
             <>

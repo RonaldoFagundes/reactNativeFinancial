@@ -115,7 +115,7 @@ export default function HomeRoutes() {
                 name="Investments"
                 component={Investments}
                 options={{
-                    title: "My Aplications",
+                    title: "Account",
                 }}
             />
 

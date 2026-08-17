@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Text, ActivityIndicator} from "react-native";
+import { View, Text, ActivityIndicator} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { AppContext } from "../../context/app";
@@ -7,18 +7,19 @@ import { AppContext } from "../../context/app";
 import {getApicationsByAccount} from '../../services/applications';
 
 import ApplicationList from '../../components/ApplicationList';
-
-
-
+import ValuesToggle from "../../components/ValuesToggle";
 
 export default function Applications({navigation}){
 
 
-   const { selectedAccount } = useContext(AppContext);
+   const { selectedAccount ,
+           showValues,
+           setShowValues} = useContext(AppContext);
 
 
    const [applications, setApplications] = useState([]);
    const [loading, setLoading] = useState(true);
+
 
 
    useEffect(() => {
@@ -45,23 +46,29 @@ export default function Applications({navigation}){
                setLoading(false);
            }
        }
-   
-   
+     
 
-  function selectApplication() {
-      console.log("selectApplication")
+        
+    function selectApplication(application) {
+
+        console.log(
+            "Aplicação selecionada:",
+            application
+        );
+
+        // navigation.navigate("ApplicationDetails", {
+        //    application
+        // });
     }
 
 
-   
 
-
+    
     return(
         <LinearGradient
                    colors={["#0F0E17", "#000000"]}
                    style={{ flex: 1 }}
-               >
-       
+               >       
                    <Text
                        style={{
                            color: "#FFF",
@@ -71,8 +78,25 @@ export default function Applications({navigation}){
                        }}
                    >
                        Applicações
-                   </Text>
-       
+                   </Text>  
+
+                    <View
+                style={{
+                     alignItems: "flex-end",
+                    paddingHorizontal: 20,
+                    marginBottom: 8
+                }}
+            >
+                <ValuesToggle
+                    visible={!showValues}
+                    onToggle={() =>
+                        setShowValues(
+                            prev => !prev
+                        )
+                    }
+                />
+            </View>
+
        
                    {loading ? (
                        <ActivityIndicator
@@ -85,13 +109,9 @@ export default function Applications({navigation}){
                            apl={applications} 
                            onSelectApplication={selectApplication}                           
                        />
-                   )}
-       
-                   
+                   )}  
        
                </LinearGradient>
-    )
-
-    
+    )   
 
 }

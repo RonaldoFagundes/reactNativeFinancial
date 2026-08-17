@@ -2,10 +2,7 @@ import React from "react";
 import { Pressable, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-
 import styles from "./styles";
-
-
 
 export default function MenuCard({ icon, title, onPress }) {
 

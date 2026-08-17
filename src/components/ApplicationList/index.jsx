@@ -3,13 +3,7 @@ import { FlatList, Text, Pressable, View } from "react-native";
 import ApplicationCard from "../ApplicationCard";
 import styles from "./styles";
 
-
-
-
 export default function ApplicationList({apl, onSelectApplication}){
-
-
-
 
    return(
       <FlatList
@@ -27,8 +21,6 @@ export default function ApplicationList({apl, onSelectApplication}){
                   )}
       
                   showsVerticalScrollIndicator={false}
-        />
-      
+        />      
    )
-
 } 
