@@ -1,8 +1,6 @@
 # 💰 Aplicativo Financeiro
 
-> Aplicação Mobile de gerenciamento financeiro desenvolvida com React Native,
-> utilizando componentes reutilizáveis, Context API, persistência local e
-> integração com APIs REST.
+> Aplicação mobile de gerenciamento financeiro desenvolvida com **React Native**, utilizando componentes reutilizáveis, Context API, persistência local e integração com APIs REST.
 
 <p align="center">
   <img src="docs/img/login.png" width="180">
@@ -15,31 +13,32 @@
 
 ## 📱 Sobre o projeto
 
-O **Aplicativo Financeiro** é um projeto **Mobile Front-End desenvolvido em
-React Native**, com foco no gerenciamento de bancos, contas bancárias,
-transações, cartões de crédito e investimentos.
+O **Aplicativo Financeiro** é um projeto **Mobile Front-End desenvolvido em React Native**, com foco no gerenciamento de bancos, contas bancárias, transações, cartões de crédito, investimentos e aplicações financeiras.
 
-A aplicação possui uma arquitetura baseada em **componentes reutilizáveis**,
-gerenciamento de estado global através da **React Context API** e comunicação
-com servidores através de **APIs REST**.
+A aplicação utiliza uma arquitetura baseada em:
 
-O projeto foi desenvolvido de forma desacoplada do Back-End, permitindo que
-o aplicativo possa consumir uma API desenvolvida utilizando diferentes
-tecnologias.
+* 🧩 Componentes reutilizáveis;
+* 🧠 React Context API;
+* 💾 Persistência local;
+* 🔌 Integração com APIs REST;
+* 🧭 Navegação entre diferentes módulos;
+* 🔄 Seleção global de banco e conta.
 
-Entre as possibilidades de Back-End estão:
+O projeto foi desenvolvido de forma desacoplada do Back-End, permitindo que o aplicativo consuma APIs desenvolvidas utilizando diferentes tecnologias.
 
-- 🐘 PHP;
-- 🌐 Laravel;
-- ☕ Spring Boot;
-- 🟢 Node.js;
-- ou qualquer outra tecnologia capaz de disponibilizar uma API REST.
+Entre as possibilidades estão:
+
+* 🐘 PHP;
+* 🌐 Laravel;
+* ☕ Spring Boot;
+* 🟢 Node.js;
+* ou qualquer outra tecnologia capaz de disponibilizar uma API REST.
 
 ---
 
 # 📸 Preview
 
-### 🔐 Login
+## 🔐 Login
 
 <p align="center">
   <img src="docs/img/login.png" width="250">
@@ -49,29 +48,27 @@ Tela de autenticação do aplicativo.
 
 ---
 
-### 🏦 Banco
+## 🏦 Banco
 
 <p align="center">
   <img src="docs/img/bank.png" width="250">
 </p>
 
-Tela principal do banco, apresentando as contas cadastradas, conta
-selecionada e saldo.
+Tela principal do banco, apresentando as contas cadastradas, a conta selecionada e o saldo.
 
 ---
 
-### 💳 Conta
+## 💳 Conta
 
 <p align="center">
   <img src="docs/img/account.png" width="250">
 </p>
 
-Tela de detalhes da conta, apresentando informações do banco, tipo da conta,
-número, saldo e serviços disponíveis.
+Tela de detalhes da conta, apresentando informações do banco, tipo da conta, número, saldo e serviços disponíveis.
 
 ---
 
-### 📈 Aplicações
+## 📈 Aplicações
 
 <p align="center">
   <img src="docs/img/applications.png" width="250">
@@ -81,37 +78,16 @@ Tela de aplicações financeiras vinculadas à conta selecionada.
 
 ---
 
-
-
-
-
-## 🖼️ Galeria
+# 🖼️ Galeria
 
 <p align="center">
-  <img src="docs/images/login.png" width="180">
-  <img src="docs/images/bank.png" width="180">
-  <img src="docs/images/account.png" width="180">
-  <img src="docs/images/applications.png" width="180">
+  <img src="docs/img/login.png" width="180">
+  <img src="docs/img/bank.png" width="180">
+  <img src="docs/img/account.png" width="180">
+  <img src="docs/img/applications.png" width="180">
 </p>
 
----
-
-# 💡 Destaques técnicos
-
-O projeto foi desenvolvido considerando alguns princípios importantes de
-desenvolvimento de aplicações mobile:
-
-- 📱 Arquitetura Mobile Front-End desacoplada do Back-End;
-- 🔌 Integração com APIs REST;
-- 🧠 Context API para gerenciamento de estado global;
-- 🧩 Componentização da interface;
-- ♻️ Componentes reutilizáveis;
-- 💾 Persistência local com AsyncStorage;
-- 👁️ Controle global de visibilidade dos valores financeiros;
-- 🧭 Navegação entre diferentes módulos da aplicação;
-- 🔄 Seleção global de banco e conta;
-- 📊 Estrutura preparada para diferentes implementações de Back-End;
-- 🚀 Estrutura preparada para evolução do projeto.
+> As imagens utilizadas nesta documentação estão armazenadas em `docs/img/`.
 
 ---
 
@@ -119,19 +95,37 @@ desenvolvimento de aplicações mobile:
 
 O aplicativo permite ao usuário:
 
-- 🔐 Realizar login;
-- 🏦 Visualizar bancos cadastrados;
-- 💳 Visualizar contas bancárias;
-- ➕ Cadastrar novas contas;
-- 🔄 Selecionar uma conta;
-- 💰 Consultar saldos;
-- 👁️ Mostrar ou ocultar valores financeiros;
-- 📊 Consultar investimentos;
-- 💵 Visualizar aplicações financeiras;
-- 💳 Acessar cartões de crédito;
-- 🔄 Consultar transações;
-- 📋 Visualizar detalhes das contas;
-- 📈 Acessar serviços relacionados a investimentos.
+* 🔐 Realizar login;
+* 🏦 Visualizar bancos cadastrados;
+* 💳 Visualizar contas bancárias;
+* ➕ Cadastrar novas contas;
+* 🔄 Selecionar uma conta;
+* 💰 Consultar saldos;
+* 👁️ Mostrar ou ocultar valores financeiros;
+* 📊 Consultar investimentos;
+* 💵 Visualizar aplicações financeiras;
+* 💳 Acessar cartões de crédito;
+* 🔄 Consultar transações;
+* 📋 Visualizar detalhes das contas;
+* 📈 Acessar serviços relacionados a investimentos.
+
+---
+
+# 💡 Destaques técnicos
+
+O projeto foi desenvolvido considerando princípios importantes para aplicações mobile:
+
+* 📱 Arquitetura Mobile Front-End desacoplada do Back-End;
+* 🔌 Integração com APIs REST;
+* 🧠 Context API para gerenciamento de estado global;
+* 🧩 Componentização da interface;
+* ♻️ Componentes reutilizáveis;
+* 💾 Persistência local com AsyncStorage;
+* 👁️ Controle global da visibilidade dos valores financeiros;
+* 🧭 Navegação entre diferentes módulos;
+* 🔄 Seleção global de banco e conta;
+* 📊 Estrutura preparada para diferentes implementações de Back-End;
+* 🚀 Arquitetura preparada para evolução do projeto.
 
 ---
 
@@ -141,20 +135,13 @@ O aplicativo permite ao usuário:
 
 Framework utilizado para o desenvolvimento da aplicação mobile.
 
----
-
 ## 🚀 Expo
 
-Utilizado para facilitar o desenvolvimento, execução e testes da aplicação
-React Native.
-
----
+Utilizado para facilitar o desenvolvimento, execução e testes da aplicação React Native.
 
 ## 🟨 JavaScript
 
 Linguagem principal utilizada no desenvolvimento da aplicação.
-
----
 
 ## 🧠 React Context API
 
@@ -162,25 +149,18 @@ Utilizada para gerenciamento de informações globais da aplicação.
 
 Entre os estados globais estão:
 
-- usuário autenticado;
-- banco selecionado;
-- conta selecionada;
-- visibilidade dos valores financeiros.
-
----
+* usuário autenticado;
+* banco selecionado;
+* conta selecionada;
+* visibilidade dos valores financeiros.
 
 ## 💾 AsyncStorage
 
-Utilizado para armazenamento local das informações relacionadas à
-autenticação do usuário.
-
----
+Utilizado para armazenamento local das informações relacionadas à autenticação e às preferências da aplicação.
 
 ## 🎨 Expo Linear Gradient
 
 Utilizado para criação dos fundos com gradiente da aplicação.
-
----
 
 ## 🔷 Ionicons
 
@@ -194,8 +174,7 @@ Utilizado para os ícones da interface através do pacote:
 
 # 🏗️ Arquitetura
 
-O aplicativo foi desenvolvido como um **Mobile Front-End**, utilizando uma
-API REST como camada de comunicação com o Back-End.
+O aplicativo foi desenvolvido como um **Mobile Front-End**, utilizando uma API REST como camada de comunicação com o Back-End.
 
 ```text
                  ┌─────────────────────────┐
@@ -225,8 +204,7 @@ API REST como camada de comunicação com o Back-End.
 
 O Front-End não depende diretamente da tecnologia utilizada no servidor.
 
-O principal requisito é que a API disponibilize os endpoints esperados pelo
-aplicativo e mantenha o formato dos dados em JSON.
+O principal requisito é que a API disponibilize os endpoints esperados pelo aplicativo e mantenha o formato dos dados em JSON.
 
 ---
 
@@ -236,22 +214,18 @@ O aplicativo pode consumir diferentes implementações de API REST.
 
 As principais possibilidades consideradas neste projeto são:
 
-- 🐘 PHP;
-- 🌐 Laravel;
-- ☕ Spring Boot.
+* 🐘 PHP;
+* 🌐 Laravel;
+* ☕ Spring Boot;
+* 🟢 Node.js.
 
-Durante o desenvolvimento e prototipação também é possível utilizar uma API
-PHP utilizando arquivos `.json`, sem a necessidade de um banco de dados.
+A implementação do Back-End pode ser alterada desde que o contrato da API seja mantido.
 
 ---
 
 # 🐘 API PHP com arquivos JSON
 
-Uma alternativa simples para desenvolvimento, testes e prototipação é
-utilizar uma API REST desenvolvida em PHP, armazenando os dados em arquivos
-`.json`.
-
-A arquitetura pode ser representada da seguinte forma:
+Uma alternativa simples para desenvolvimento, testes e prototipação é utilizar uma API REST desenvolvida em PHP, armazenando os dados em arquivos `.json`, sem a necessidade de um banco de dados.
 
 ```text
                  React Native
@@ -277,13 +251,13 @@ A arquitetura pode ser representada da seguinte forma:
 
 Essa abordagem é adequada principalmente para:
 
-- desenvolvimento;
-- testes;
-- prototipação;
-- demonstração;
-- ambientes sem necessidade de banco de dados.
+* desenvolvimento;
+* testes;
+* prototipação;
+* demonstração;
+* ambientes sem necessidade de banco de dados.
 
-### Exemplo de estrutura
+### Estrutura de exemplo
 
 ```text
 php-api/
@@ -326,8 +300,7 @@ php-api/
 
 # 🐘 PHP + Banco de Dados
 
-Outra possibilidade é utilizar uma API REST desenvolvida em PHP conectada
-a um banco de dados.
+Outra possibilidade é utilizar uma API REST desenvolvida em PHP conectada a um banco de dados.
 
 ```text
                  React Native
@@ -349,16 +322,19 @@ a um banco de dados.
               MySQL        MariaDB
 ```
 
-Essa abordagem é mais adequada para aplicações que necessitam de
-persistência de dados, relacionamentos entre entidades e operações
-simultâneas.
+Essa abordagem é mais adequada para aplicações que necessitam de:
+
+* persistência de dados;
+* relacionamentos entre entidades;
+* operações simultâneas;
+* regras de negócio;
+* maior escalabilidade.
 
 ---
 
 # 🌐 API Laravel
 
-O aplicativo também pode consumir uma API REST desenvolvida utilizando
-Laravel.
+O aplicativo também pode consumir uma API REST desenvolvida utilizando Laravel.
 
 ```text
                  React Native
@@ -382,23 +358,22 @@ Laravel.
 
 O Laravel pode ser utilizado para implementar:
 
-- autenticação;
-- usuários;
-- bancos;
-- contas;
-- transações;
-- cartões;
-- investimentos;
-- aplicações financeiras;
-- validação dos dados;
-- regras de negócio.
+* autenticação;
+* usuários;
+* bancos;
+* contas;
+* transações;
+* cartões;
+* investimentos;
+* aplicações financeiras;
+* validação de dados;
+* regras de negócio.
 
 ---
 
 # ☕ API Spring Boot
 
-Outra possibilidade é utilizar Spring Boot para implementar o Back-End da
-aplicação.
+Outra possibilidade é utilizar Spring Boot para implementar o Back-End da aplicação.
 
 ```text
                  React Native
@@ -420,15 +395,20 @@ aplicação.
            PostgreSQL       MySQL
 ```
 
-O Spring Boot pode ser utilizado para implementar a camada de serviços,
-regras de negócio, autenticação e acesso ao banco de dados.
+O Spring Boot pode ser utilizado para implementar:
+
+* camada de serviços;
+* regras de negócio;
+* autenticação;
+* validação;
+* acesso ao banco de dados;
+* endpoints REST.
 
 ---
 
 # 🔄 Arquitetura geral
 
-Independentemente da tecnologia utilizada no Back-End, o aplicativo
-React Native mantém sua função de **Mobile Front-End**.
+Independentemente da tecnologia utilizada no Back-End, o aplicativo React Native mantém sua função de **Mobile Front-End**.
 
 ```text
                          React Native
@@ -446,80 +426,80 @@ React Native mantém sua função de **Mobile Front-End**.
           JSON / DB        Database       Database
 ```
 
-Dessa forma, a implementação do servidor pode ser alterada sem modificar
-necessariamente a estrutura principal do aplicativo.
+Dessa forma, a implementação do servidor pode ser alterada sem modificar necessariamente a estrutura principal do aplicativo.
 
 O principal requisito é manter o contrato da API, incluindo:
 
-- endpoints;
-- métodos HTTP;
-- parâmetros;
-- códigos de resposta;
-- estrutura dos objetos JSON.
+* endpoints;
+* métodos HTTP;
+* parâmetros;
+* códigos de resposta;
+* estrutura dos objetos JSON.
 
 ---
 
 # 📂 Estrutura do projeto
 
-Uma estrutura aproximada do projeto:
+A estrutura principal do projeto é organizada da seguinte forma:
 
 ```text
-src/
+reactNativeFinancial/
 │
-├── components/
-│   ├── AccountCard/
-│   ├── AccountDropdown/
-│   ├── AccountList/
-│   ├── AccountModal/
-│   ├── ApplicationCard/
-│   ├── ApplicationList/
-│   ├── BankSummary/
-│   ├── MenuCard/
-│   ├── ValuesToggle/
-│   └── ...
+├── src/
+│   │
+│   ├── components/
+│   │   ├── AccountCard/
+│   │   ├── AccountDropdown/
+│   │   ├── AccountList/
+│   │   ├── AccountModal/
+│   │   ├── ApplicationCard/
+│   │   ├── ApplicationList/
+│   │   ├── BankSummary/
+│   │   ├── MenuCard/
+│   │   ├── ValuesToggle/
+│   │   └── ...
+│   │
+│   ├── context/
+│   │   └── app.js
+│   │
+│   ├── pages/
+│   │   ├── Bank/
+│   │   ├── Account/
+│   │   ├── Applications/
+│   │   ├── Transactions/
+│   │   ├── CreditCard/
+│   │   └── ...
+│   │
+│   ├── routes/
+│   │   ├── app.routes.jsx
+│   │   ├── auth.routes.jsx
+│   │   ├── home.routes.jsx
+│   │   └── index.jsx
+│   │
+│   ├── services/
+│   │   ├── api.jsx
+│   │   ├── accounts.jsx
+│   │   ├── applications.jsx
+│   │   ├── banks.jsx
+│   │   ├── request.jsx
+│   │   └── ...
+│   │
+│   └── utils/
+│       └── img/
 │
-├── context/
-│   └── app.js
-│
-├── pages/
-│   ├── Bank/
-│   ├── Account/
-│   ├── Applications/
-│   ├── Transactions/
-│   ├── CreditCard/
-│   └── ...
-│
-├── routes/
-│   ├── app.routes.jsx
-│   ├── auth.routes.jsx
-│   ├── home.routes.jsx
-│   └── index.jsx
-│
-├── services/
-│   ├── api.jsx
-│   ├── accounts.jsx
-│   ├── applications.jsx
-│   ├── banks.jsx
-│   ├── request.jsx
-│   └── ...
-│
-├── utils/
+├── docs/
 │   └── img/
+│       ├── account.png
+│       ├── applications.png
+│       ├── bank.png
+│       └── login.png
 │
-└── App.js
-
-docs/
-│
-└── images/
-    ├── login.png
-    ├── bank.png
-    ├── account.png
-    ├── applications.png
-    ├── values-visible.png
-    ├── values-hidden.png
-    ├── transactions.png
-    └── credit-card.png
+├── App.js
+├── package.json
+└── README.md
 ```
+
+> **Importante:** os caminhos das imagens deste README utilizam `docs/img/`, que corresponde à estrutura atual do projeto.
 
 ---
 
@@ -527,42 +507,39 @@ docs/
 
 A aplicação possui uma camada de configuração para definir a URL da API.
 
-Exemplo:
+### API local
 
 ```javascript
 const API = {
-
     baseURL: "http://127.0.0.1:3322",
 
     headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
     }
-
 };
 
 export default API;
 ```
 
-Também é possível utilizar uma API hospedada remotamente:
+### API remota
+
+Também é possível configurar uma API hospedada remotamente:
 
 ```javascript
 const API = {
-
-    baseURL: "https://php-financial-system.vercel.app",
+    baseURL: "URL_DA_API_REMOTA",
 
     headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
     }
-
 };
 
 export default API;
 ```
 
-A URL utilizada pode ser alterada de acordo com o ambiente de
-desenvolvimento ou produção.
+A URL pode ser alterada de acordo com o ambiente de desenvolvimento ou produção.
 
 ---
 
@@ -577,16 +554,18 @@ git clone URL_DO_REPOSITORIO
 ## 2. Entrar no projeto
 
 ```bash
-cd nome-do-projeto
+cd reactNativeFinancial
 ```
 
 ## 3. Instalar as dependências
+
+Com npm:
 
 ```bash
 npm install
 ```
 
-ou:
+ou com Yarn:
 
 ```bash
 yarn
@@ -600,11 +579,11 @@ npx expo start
 
 Após iniciar o Expo, o aplicativo pode ser executado através de:
 
-- Android;
-- iOS;
-- Expo Go;
-- emulador Android;
-- simulador iOS.
+* Android;
+* iOS;
+* Expo Go;
+* emulador Android;
+* simulador iOS.
 
 ---
 
@@ -612,7 +591,7 @@ Após iniciar o Expo, o aplicativo pode ser executado através de:
 
 O aplicativo pode ser executado utilizando diferentes fontes de dados.
 
-### Desenvolvimento
+### Desenvolvimento com PHP + JSON
 
 ```text
 React Native
@@ -664,89 +643,77 @@ Database
 
 # 🔐 Segurança e privacidade
 
-O aplicativo possui um recurso de ocultação de valores financeiros.
+O aplicativo possui um recurso de ocultação dos valores financeiros.
 
-Quando a opção de ocultar valores é ativada, os saldos são substituídos
-visualmente por caracteres de ocultação.
+Quando a opção de ocultar valores é ativada, os saldos são substituídos visualmente por caracteres de ocultação.
 
-Exemplo:
+### Valor visível
 
 ```text
 R$ 10.500,50
 ```
 
-passa a ser apresentado como:
+### Valor oculto
 
 ```text
 R$ ••••••
 ```
 
-O estado de visibilidade pode ser compartilhado entre diferentes telas
-através do gerenciamento global da aplicação.
+O estado de visibilidade pode ser compartilhado entre diferentes telas através do gerenciamento global da aplicação.
 
-> **Observação:** o recurso de ocultação é uma funcionalidade visual de
-> privacidade e não substitui mecanismos de segurança, criptografia ou
-> proteção de dados no Back-End.
+> **Observação:** o recurso de ocultação é uma funcionalidade visual de privacidade e não substitui mecanismos de segurança, criptografia ou proteção de dados no Back-End.
 
 ---
 
 # 📌 Considerações sobre o projeto
 
-Este projeto possui como objetivo principal demonstrar conhecimentos em:
+Este projeto possui como objetivo principal demonstrar conhecimentos práticos em:
 
-- desenvolvimento Mobile com React Native;
-- criação de interfaces componentizadas;
-- gerenciamento de estado;
-- navegação entre telas;
-- consumo de APIs REST;
-- comunicação HTTP;
-- manipulação de dados JSON;
-- persistência local;
-- organização de projetos;
-- criação de componentes reutilizáveis;
-- integração entre Front-End e Back-End.
+* desenvolvimento mobile com React Native;
+* criação de interfaces componentizadas;
+* gerenciamento de estado;
+* navegação entre telas;
+* consumo de APIs REST;
+* comunicação HTTP;
+* manipulação de dados JSON;
+* persistência local;
+* organização de projetos;
+* criação de componentes reutilizáveis;
+* integração entre Front-End e Back-End.
 
-O projeto pode evoluir futuramente para uma arquitetura completa envolvendo
-autenticação, banco de dados, controle de usuários, segurança, testes
-automatizados e diferentes serviços financeiros.
+O projeto pode evoluir futuramente para uma arquitetura completa envolvendo autenticação, banco de dados, controle de usuários, segurança, testes automatizados e diferentes serviços financeiros.
 
 ---
 
 # 🚧 Próximas evoluções
 
-Algumas funcionalidades que podem ser adicionadas futuramente:
-
-- [ ] Autenticação com JWT;
-- [ ] Cadastro de usuários;
-- [ ] Recuperação de senha;
-- [ ] Dashboard financeiro;
-- [ ] Gráficos de receitas e despesas;
-- [ ] Categorias financeiras;
-- [ ] Filtros de transações;
-- [ ] Paginação;
-- [ ] Pull-to-refresh;
-- [ ] Notificações;
-- [ ] Biometria;
-- [ ] Testes unitários;
-- [ ] Testes de integração;
-- [ ] Criptografia de informações sensíveis;
-- [ ] Integração com banco de dados;
-- [ ] API completa para produção.
+* [ ] Autenticação com JWT
+* [ ] Cadastro de usuários
+* [ ] Recuperação de senha
+* [ ] Dashboard financeiro
+* [ ] Gráficos de receitas e despesas
+* [ ] Categorias financeiras
+* [ ] Filtros de transações
+* [ ] Paginação
+* [ ] Pull-to-refresh
+* [ ] Notificações
+* [ ] Biometria
+* [ ] Testes unitários
+* [ ] Testes de integração
+* [ ] Criptografia de informações sensíveis
+* [ ] Integração com banco de dados
+* [ ] API completa para produção
 
 ---
 
 # 👨‍💻 Objetivo do projeto
 
-Este projeto foi desenvolvido como **projeto de portfólio**, com o objetivo
-de demonstrar conhecimentos práticos em desenvolvimento de aplicações
-mobile utilizando React Native.
+Este projeto foi desenvolvido como **projeto de portfólio**, com o objetivo de demonstrar conhecimentos práticos em desenvolvimento de aplicações mobile utilizando React Native.
 
-O foco está principalmente na construção de um **Front-End Mobile
-componentizado, reutilizável e desacoplado do Back-End**, permitindo sua
-integração com diferentes tecnologias de servidor através de APIs REST.
+O foco principal está na construção de um **Front-End Mobile componentizado, reutilizável e desacoplado do Back-End**, permitindo sua integração com diferentes tecnologias de servidor através de APIs REST.
 
 ---
 
 # 📄 Licença
 
-Este projeto está disponível para fins de estudo, demonstração e portfólio.
+Este projeto está disponível para fins de **estudo, demonstração e portfólio**.
