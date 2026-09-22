@@ -3,6 +3,67 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
 
     container: {
+        flex: 1
+    },
+
+    header: {
+        flexDirection: "row",
+
+        alignItems: "center",
+
+        justifyContent: "space-between",
+
+        paddingHorizontal: 20,
+
+        paddingTop: 24,
+
+        paddingBottom: 16
+    },
+
+    title: {
+        color: "#FFFFFF",
+
+        fontSize: 24,
+
+        fontWeight: "700",
+
+        marginBottom: 6
+    },
+
+    subtitle: {
+        color: "#777777",
+
+        fontSize: 13
+    },
+
+    addButton: {
+        width: 46,
+
+        height: 46,
+
+        borderRadius: 14,
+
+        backgroundColor: "#44E8C3",
+
+        alignItems: "center",
+
+        justifyContent: "center"
+    },
+
+    listContainer: {
+        flex: 1
+    }
+
+});
+
+
+
+/*
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+
+    container: {
         flex: 1,
         padding: 20
     },
@@ -29,3 +90,4 @@ export default StyleSheet.create({
     }
 
 });
+*/

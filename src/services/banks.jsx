@@ -6,14 +6,20 @@ export function getBanks() {
     return request("/banks");
 }
 
+
+
 export function getBank(id) {
     return request(`/banks/${id}`);
 }
 
 
+
+
 export function getAccounts(bankId) {
     return request(`/banks/${bankId}/accounts`);
 }
+
+
 
 
 export async function createBank(bank) {
